@@ -46,24 +46,23 @@
           <img src="assets/profile.jpg" alt="profile" />
         </div>
       </div>
-
-      <script>
-        function openMailClient() {
-          // Open the default mail client with the email address
-          window.location.href = 'mailto:chukwudi.ofoma@pau.edu.ng';
-        }
-      
-        function downloadResume() {
-          // Create a link to the resume PDF and simulate a click to trigger download
-          const link = document.createElement('a');
-          link.href = 'assets/resume.pdf';
-          link.download = 'resume.pdf';
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        }
-      </script>
     </section>
 
+    <script>
+      function openMailClient() {
+        // Open the default mail client with the email address
+        window.location.href = 'mailto:chukwudi.ofoma@pau.edu.ng';
+      }
+    
+      function downloadResume() {
+        // Create a link to the resume PDF and simulate a click to trigger download
+        const link = document.createElement('a');
+        link.href = 'assets/resume.pdf';
+        link.download = 'resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
   </body>
 </html>
